@@ -28,6 +28,11 @@ namespace SudokuRD.Controllers
             return View();
         }
 
+        public IActionResult Sudoku()
+        {
+            return View();
+        }
+
         public void NewGame()
         {
 
