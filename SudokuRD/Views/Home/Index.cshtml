@@ -1,0 +1,141 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<body onkeypress="checkForNumKey(event)"></body>
+
+<div>
+    <select id="NumberSelection">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+  </select>
+</div>
+
+<!--Row 1-->
+<div>
+    <button class="sudoku_button border_left border_top" id="box1_1" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_top" id="box1_2" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right border_top" id="box1_3" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_left border_top" id="box1_4" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_top" id="box1_5" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right border_top" id="box1_6" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_left border_top"  id="box1_7" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_top" id="box1_8" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right border_top" id="box1_9" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+</div>
+
+<!--Row 2-->
+<div>
+    <button class="sudoku_button border_left" id="box2_1" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button" id="box2_2" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right" id="box2_3" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_left" id="box2_4" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button" id="box2_5" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right" id="box2_6" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_left" id="box2_7" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button" id="box2_8" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right" id="box2_9" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+</div>
+
+<!--Row 3-->
+<div>
+    <button class="sudoku_button border_left border_bottom" id="box3_1" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_bottom" id="box3_2" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right border_bottom" id="box3_3" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_left border_bottom" id="box3_4" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_bottom" id="box3_5" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right border_bottom" id="box3_6" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_left border_bottom" id="box3_7" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_bottom" id="box3_8" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right border_bottom" id="box3_9" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+</div>
+
+<!--Row 4-->
+<div>
+    <button class="sudoku_button border_left border_top" id="box4_1" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_top" id="box4_2" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right border_top" id="box4_3" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_left border_top" id="box4_4" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_top" id="box4_5" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right border_top" id="box4_6" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_left border_top"  id="box4_7" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_top" id="box4_8" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right border_top" id="box4_9" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+</div>
+
+<!--Row 5-->
+<div>
+    <button class="sudoku_button border_left" id="box5_1" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button" id="box5_2" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right" id="box5_3" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_left" id="box5_4" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button" id="box5_5" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right" id="box5_6" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_left" id="box5_7" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button" id="box5_8" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right" id="box5_9" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+</div>
+
+<!--Row 6-->
+<div>
+    <button class="sudoku_button border_left border_bottom" id="box6_1" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_bottom" id="box6_2" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right border_bottom" id="box6_3" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_left border_bottom" id="box6_4" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_bottom" id="box6_5" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right border_bottom" id="box6_6" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_left border_bottom" id="box6_7" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_bottom" id="box6_8" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right border_bottom" id="box6_9" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+</div>
+
+<!--Row 7-->
+<div>
+    <button class="sudoku_button border_left border_top" id="box7_1" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_top" id="box7_2" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right border_top" id="box7_3" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_left border_top" id="box7_4" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_top" id="box7_5" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right border_top" id="box7_6" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_left border_top"  id="box7_7" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_top" id="box7_8" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right border_top" id="box7_9" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+</div>
+
+<!--Row 8-->
+<div>
+    <button class="sudoku_button border_left" id="box8_1" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button" id="box8_2" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right" id="box8_3" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_left" id="box8_4" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button" id="box8_5" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right" id="box8_6" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_left" id="box8_7" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button" id="box8_8" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right" id="box8_9" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+</div>
+
+<!--Row 9-->
+<div>
+    <button class="sudoku_button border_left border_bottom" id="box9_1" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_bottom" id="box9_2" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right border_bottom" id="box9_3" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_left border_bottom" id="box9_4" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_bottom" id="box9_5" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right border_bottom" id="box9_6" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_left border_bottom" id="box9_7" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_bottom" id="box9_8" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+    <button class="sudoku_button border_right border_bottom" id="box9_9" onclick='makeMove(this.id, document.getElementById("NumberSelection").value);'></button>
+</div>
+
+<div>
+    
+    <br />Notes <input type="checkbox" id="notes" name="notesMode" value="inputNotes" />
+</div>
