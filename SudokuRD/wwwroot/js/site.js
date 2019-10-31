@@ -39,8 +39,11 @@ function createNote(numberToNote, innerHtml) {
 
 function makeMove(boxTried, numberTried) {
     if (document.getElementById("notes").checked == true) {
-
         var box = document.getElementById(boxTried);
+        if (box.style.background !== "lightblue") {
+            box.innerHTML = "";
+            box.style.background = "lightblue";
+        }
         box.innerHTML = createNote(numberTried, box.innerHTML);
     }
     else {
