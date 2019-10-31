@@ -3,6 +3,60 @@
 
 // Write your JavaScript code.
 
+function SaveGame() {
+    var box = document.getElementById("box1_1");
+    document.cookie = 'box1_1Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_1Color=' + box.style.background + ';';
+    document.cookie = 'box1_1Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box1_2");
+    document.cookie = 'box1_2Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_2Color=' + box.style.background + ';';
+    document.cookie = 'box1_2Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box1_3");
+    document.cookie = 'box1_3Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_3Color=' + box.style.background + ';';
+    document.cookie = 'box1_3Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box1_3");
+    document.cookie = 'box1_3Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_3Color=' + box.style.background + ';';
+    document.cookie = 'box1_3Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box1_4");
+    document.cookie = 'box1_4Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_4Color=' + box.style.background + ';';
+    document.cookie = 'box1_4Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box1_5");
+    document.cookie = 'box1_5Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_5Color=' + box.style.background + ';';
+    document.cookie = 'box1_5Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box1_6");
+    document.cookie = 'box1_6Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_6Color=' + box.style.background + ';';
+    document.cookie = 'box1_6Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box1_7");
+    document.cookie = 'box1_7Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_7Color=' + box.style.background + ';';
+    document.cookie = 'box1_7Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box1_8");
+    document.cookie = 'box1_8Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_8Color=' + box.style.background + ';';
+    document.cookie = 'box1_8Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box1_9");
+    document.cookie = 'box1_9Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_9Color=' + box.style.background + ';';
+    document.cookie = 'box1_9Disabled=' + box.disabled + ';';
+
+
+}
+
 function checkForNumKey(event) {
     if (event.keyCode == 49)
         document.getElementById("NumberSelection").value = 1;

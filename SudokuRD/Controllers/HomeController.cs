@@ -28,14 +28,14 @@ namespace SudokuRD.Controllers
             return View();
         }
 
-        public IActionResult Sudoku()
+        public IActionResult NewGame()
         {
-            return View();
+            return View("Sudoku");
         }
 
-        public void NewGame()
+        public IActionResult ContinueGame()
         {
-
+            return View("Sudoku");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
