@@ -3,64 +3,12 @@
 
 // Write your JavaScript code.
 
-function SaveGame() {
-    var box = document.getElementById("box1_1");
-    document.cookie = 'box1_1Value=' + box.innerHTML + ';';
-    document.cookie = 'box1_1Color=' + box.style.background + ';';
-    document.cookie = 'box1_1Disabled=' + box.disabled + ';';
 
-    box = document.getElementById("box1_2");
-    document.cookie = 'box1_2Value=' + box.innerHTML + ';';
-    document.cookie = 'box1_2Color=' + box.style.background + ';';
-    document.cookie = 'box1_2Disabled=' + box.disabled + ';';
-
-    box = document.getElementById("box1_3");
-    document.cookie = 'box1_3Value=' + box.innerHTML + ';';
-    document.cookie = 'box1_3Color=' + box.style.background + ';';
-    document.cookie = 'box1_3Disabled=' + box.disabled + ';';
-
-    box = document.getElementById("box1_3");
-    document.cookie = 'box1_3Value=' + box.innerHTML + ';';
-    document.cookie = 'box1_3Color=' + box.style.background + ';';
-    document.cookie = 'box1_3Disabled=' + box.disabled + ';';
-
-    box = document.getElementById("box1_4");
-    document.cookie = 'box1_4Value=' + box.innerHTML + ';';
-    document.cookie = 'box1_4Color=' + box.style.background + ';';
-    document.cookie = 'box1_4Disabled=' + box.disabled + ';';
-
-    box = document.getElementById("box1_5");
-    document.cookie = 'box1_5Value=' + box.innerHTML + ';';
-    document.cookie = 'box1_5Color=' + box.style.background + ';';
-    document.cookie = 'box1_5Disabled=' + box.disabled + ';';
-
-    box = document.getElementById("box1_6");
-    document.cookie = 'box1_6Value=' + box.innerHTML + ';';
-    document.cookie = 'box1_6Color=' + box.style.background + ';';
-    document.cookie = 'box1_6Disabled=' + box.disabled + ';';
-
-    box = document.getElementById("box1_7");
-    document.cookie = 'box1_7Value=' + box.innerHTML + ';';
-    document.cookie = 'box1_7Color=' + box.style.background + ';';
-    document.cookie = 'box1_7Disabled=' + box.disabled + ';';
-
-    box = document.getElementById("box1_8");
-    document.cookie = 'box1_8Value=' + box.innerHTML + ';';
-    document.cookie = 'box1_8Color=' + box.style.background + ';';
-    document.cookie = 'box1_8Disabled=' + box.disabled + ';';
-
-    box = document.getElementById("box1_9");
-    document.cookie = 'box1_9Value=' + box.innerHTML + ';';
-    document.cookie = 'box1_9Color=' + box.style.background + ';';
-    document.cookie = 'box1_9Disabled=' + box.disabled + ';';
-
-
-}
 
 function checkForNumKey(event) {
     if (event.keyCode == 49)
         document.getElementById("NumberSelection").value = 1;
-    else if(event.keyCode == 50)
+    else if (event.keyCode == 50)
         document.getElementById("NumberSelection").value = 2;
     else if (event.keyCode == 51)
         document.getElementById("NumberSelection").value = 3;
@@ -76,6 +24,8 @@ function checkForNumKey(event) {
         document.getElementById("NumberSelection").value = 8;
     else if (event.keyCode == 57)
         document.getElementById("NumberSelection").value = 9;
+    else if (event.keyCode == 32)
+        document.getElementById("notes").checked = !(document.getElementById("notes").checked);
 }
 
 function createNote(numberToNote, innerHtml) {
@@ -802,4 +752,412 @@ function GetNewGame() {
             ResetButton('box9_9');
         }
     });
+}
+
+
+function SaveGame() {
+    var box = document.getElementById("box1_1");
+    document.cookie = 'box1_1Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_1Color=' + box.style.background + ';';
+    document.cookie = 'box1_1Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box1_2");
+    document.cookie = 'box1_2Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_2Color=' + box.style.background + ';';
+    document.cookie = 'box1_2Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box1_3");
+    document.cookie = 'box1_3Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_3Color=' + box.style.background + ';';
+    document.cookie = 'box1_3Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box1_4");
+    document.cookie = 'box1_4Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_4Color=' + box.style.background + ';';
+    document.cookie = 'box1_4Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box1_5");
+    document.cookie = 'box1_5Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_5Color=' + box.style.background + ';';
+    document.cookie = 'box1_5Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box1_6");
+    document.cookie = 'box1_6Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_6Color=' + box.style.background + ';';
+    document.cookie = 'box1_6Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box1_7");
+    document.cookie = 'box1_7Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_7Color=' + box.style.background + ';';
+    document.cookie = 'box1_7Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box1_8");
+    document.cookie = 'box1_8Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_8Color=' + box.style.background + ';';
+    document.cookie = 'box1_8Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box1_9");
+    document.cookie = 'box1_9Value=' + box.innerHTML + ';';
+    document.cookie = 'box1_9Color=' + box.style.background + ';';
+    document.cookie = 'box1_9Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box2_1");
+    document.cookie = 'box2_1Value=' + box.innerHTML + ';';
+    document.cookie = 'box2_1Color=' + box.style.background + ';';
+    document.cookie = 'box2_1Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box2_3");
+    document.cookie = 'box2_3Value=' + box.innerHTML + ';';
+    document.cookie = 'box2_3Color=' + box.style.background + ';';
+    document.cookie = 'box2_3Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box2_3");
+    document.cookie = 'box2_3Value=' + box.innerHTML + ';';
+    document.cookie = 'box2_3Color=' + box.style.background + ';';
+    document.cookie = 'box2_3Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box2_4");
+    document.cookie = 'box2_4Value=' + box.innerHTML + ';';
+    document.cookie = 'box2_4Color=' + box.style.background + ';';
+    document.cookie = 'box2_4Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box2_5");
+    document.cookie = 'box2_5Value=' + box.innerHTML + ';';
+    document.cookie = 'box2_5Color=' + box.style.background + ';';
+    document.cookie = 'box2_5Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box2_6");
+    document.cookie = 'box2_6Value=' + box.innerHTML + ';';
+    document.cookie = 'box2_6Color=' + box.style.background + ';';
+    document.cookie = 'box2_6Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box2_7");
+    document.cookie = 'box2_7Value=' + box.innerHTML + ';';
+    document.cookie = 'box2_7Color=' + box.style.background + ';';
+    document.cookie = 'box2_7Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box2_8");
+    document.cookie = 'box2_8Value=' + box.innerHTML + ';';
+    document.cookie = 'box2_8Color=' + box.style.background + ';';
+    document.cookie = 'box2_8Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box2_9");
+    document.cookie = 'box2_9Value=' + box.innerHTML + ';';
+    document.cookie = 'box2_9Color=' + box.style.background + ';';
+    document.cookie = 'box2_9Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box3_1");
+    document.cookie = 'box3_1Value=' + box.innerHTML + ';';
+    document.cookie = 'box3_1Color=' + box.style.background + ';';
+    document.cookie = 'box3_1Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box3_2");
+    document.cookie = 'box3_2Value=' + box.innerHTML + ';';
+    document.cookie = 'box3_2Color=' + box.style.background + ';';
+    document.cookie = 'box3_2Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box3_3");
+    document.cookie = 'box3_3Value=' + box.innerHTML + ';';
+    document.cookie = 'box3_3Color=' + box.style.background + ';';
+    document.cookie = 'box3_3Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box3_4");
+    document.cookie = 'box3_4Value=' + box.innerHTML + ';';
+    document.cookie = 'box3_4Color=' + box.style.background + ';';
+    document.cookie = 'box3_4Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box3_5");
+    document.cookie = 'box3_5Value=' + box.innerHTML + ';';
+    document.cookie = 'box3_5Color=' + box.style.background + ';';
+    document.cookie = 'box3_5Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box3_6");
+    document.cookie = 'box3_6Value=' + box.innerHTML + ';';
+    document.cookie = 'box3_6Color=' + box.style.background + ';';
+    document.cookie = 'box3_6Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box3_7");
+    document.cookie = 'box3_7Value=' + box.innerHTML + ';';
+    document.cookie = 'box3_7Color=' + box.style.background + ';';
+    document.cookie = 'box3_7Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box3_8");
+    document.cookie = 'box3_8Value=' + box.innerHTML + ';';
+    document.cookie = 'box3_8Color=' + box.style.background + ';';
+    document.cookie = 'box3_8Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box3_9");
+    document.cookie = 'box3_9Value=' + box.innerHTML + ';';
+    document.cookie = 'box3_9Color=' + box.style.background + ';';
+    document.cookie = 'box3_9Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box4_1");
+    document.cookie = 'box4_1Value=' + box.innerHTML + ';';
+    document.cookie = 'box4_1Color=' + box.style.background + ';';
+    document.cookie = 'box4_1Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box4_2");
+    document.cookie = 'box4_2Value=' + box.innerHTML + ';';
+    document.cookie = 'box4_2Color=' + box.style.background + ';';
+    document.cookie = 'box4_2Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box4_3");
+    document.cookie = 'box4_3Value=' + box.innerHTML + ';';
+    document.cookie = 'box4_3Color=' + box.style.background + ';';
+    document.cookie = 'box4_3Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box4_4");
+    document.cookie = 'box4_4Value=' + box.innerHTML + ';';
+    document.cookie = 'box4_4Color=' + box.style.background + ';';
+    document.cookie = 'box4_4Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box4_5");
+    document.cookie = 'box4_5Value=' + box.innerHTML + ';';
+    document.cookie = 'box4_5Color=' + box.style.background + ';';
+    document.cookie = 'box4_5Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box4_6");
+    document.cookie = 'box4_6Value=' + box.innerHTML + ';';
+    document.cookie = 'box4_6Color=' + box.style.background + ';';
+    document.cookie = 'box4_6Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box4_7");
+    document.cookie = 'box4_7Value=' + box.innerHTML + ';';
+    document.cookie = 'box4_7Color=' + box.style.background + ';';
+    document.cookie = 'box4_7Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box4_8");
+    document.cookie = 'box4_8Value=' + box.innerHTML + ';';
+    document.cookie = 'box4_8Color=' + box.style.background + ';';
+    document.cookie = 'box4_8Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box4_9");
+    document.cookie = 'box4_9Value=' + box.innerHTML + ';';
+    document.cookie = 'box4_9Color=' + box.style.background + ';';
+    document.cookie = 'box4_9Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box5_1");
+    document.cookie = 'box5_1Value=' + box.innerHTML + ';';
+    document.cookie = 'box5_1Color=' + box.style.background + ';';
+    document.cookie = 'box5_1Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box5_2");
+    document.cookie = 'box5_2Value=' + box.innerHTML + ';';
+    document.cookie = 'box5_2Color=' + box.style.background + ';';
+    document.cookie = 'box5_2Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box5_3");
+    document.cookie = 'box5_3Value=' + box.innerHTML + ';';
+    document.cookie = 'box5_3Color=' + box.style.background + ';';
+    document.cookie = 'box5_3Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box5_4");
+    document.cookie = 'box5_4Value=' + box.innerHTML + ';';
+    document.cookie = 'box5_4Color=' + box.style.background + ';';
+    document.cookie = 'box5_4Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box5_5");
+    document.cookie = 'box5_5Value=' + box.innerHTML + ';';
+    document.cookie = 'box5_5Color=' + box.style.background + ';';
+    document.cookie = 'box5_5Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box5_6");
+    document.cookie = 'box5_6Value=' + box.innerHTML + ';';
+    document.cookie = 'box5_6Color=' + box.style.background + ';';
+    document.cookie = 'box5_6Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box5_7");
+    document.cookie = 'box5_7Value=' + box.innerHTML + ';';
+    document.cookie = 'box5_7Color=' + box.style.background + ';';
+    document.cookie = 'box5_7Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box5_8");
+    document.cookie = 'box5_8Value=' + box.innerHTML + ';';
+    document.cookie = 'box5_8Color=' + box.style.background + ';';
+    document.cookie = 'box5_8Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box5_9");
+    document.cookie = 'box5_9Value=' + box.innerHTML + ';';
+    document.cookie = 'box5_9Color=' + box.style.background + ';';
+    document.cookie = 'box5_9Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box6_1");
+    document.cookie = 'box6_1Value=' + box.innerHTML + ';';
+    document.cookie = 'box6_1Color=' + box.style.background + ';';
+    document.cookie = 'box6_1Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box6_2");
+    document.cookie = 'box6_2Value=' + box.innerHTML + ';';
+    document.cookie = 'box6_2Color=' + box.style.background + ';';
+    document.cookie = 'box6_2Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box6_3");
+    document.cookie = 'box6_3Value=' + box.innerHTML + ';';
+    document.cookie = 'box6_3Color=' + box.style.background + ';';
+    document.cookie = 'box6_3Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box6_4");
+    document.cookie = 'box6_4Value=' + box.innerHTML + ';';
+    document.cookie = 'box6_4Color=' + box.style.background + ';';
+    document.cookie = 'box6_4Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box6_5");
+    document.cookie = 'box6_5Value=' + box.innerHTML + ';';
+    document.cookie = 'box6_5Color=' + box.style.background + ';';
+    document.cookie = 'box6_5Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box6_6");
+    document.cookie = 'box6_6Value=' + box.innerHTML + ';';
+    document.cookie = 'box6_6Color=' + box.style.background + ';';
+    document.cookie = 'box6_6Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box6_7");
+    document.cookie = 'box6_7Value=' + box.innerHTML + ';';
+    document.cookie = 'box6_7Color=' + box.style.background + ';';
+    document.cookie = 'box6_7Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box6_8");
+    document.cookie = 'box6_8Value=' + box.innerHTML + ';';
+    document.cookie = 'box6_8Color=' + box.style.background + ';';
+    document.cookie = 'box6_8Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box6_9");
+    document.cookie = 'box6_9Value=' + box.innerHTML + ';';
+    document.cookie = 'box6_9Color=' + box.style.background + ';';
+    document.cookie = 'box6_9Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box7_1");
+    document.cookie = 'box7_1Value=' + box.innerHTML + ';';
+    document.cookie = 'box7_1Color=' + box.style.background + ';';
+    document.cookie = 'box7_1Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box7_2");
+    document.cookie = 'box7_2Value=' + box.innerHTML + ';';
+    document.cookie = 'box7_2Color=' + box.style.background + ';';
+    document.cookie = 'box7_2Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box7_3");
+    document.cookie = 'box7_3Value=' + box.innerHTML + ';';
+    document.cookie = 'box7_3Color=' + box.style.background + ';';
+    document.cookie = 'box7_3Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box7_4");
+    document.cookie = 'box7_4Value=' + box.innerHTML + ';';
+    document.cookie = 'box7_4Color=' + box.style.background + ';';
+    document.cookie = 'box7_4Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box7_5");
+    document.cookie = 'box7_5Value=' + box.innerHTML + ';';
+    document.cookie = 'box7_5Color=' + box.style.background + ';';
+    document.cookie = 'box7_5Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box7_6");
+    document.cookie = 'box7_6Value=' + box.innerHTML + ';';
+    document.cookie = 'box7_6Color=' + box.style.background + ';';
+    document.cookie = 'box7_6Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box7_7");
+    document.cookie = 'box7_7Value=' + box.innerHTML + ';';
+    document.cookie = 'box7_7Color=' + box.style.background + ';';
+    document.cookie = 'box7_7Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box7_8");
+    document.cookie = 'box7_8Value=' + box.innerHTML + ';';
+    document.cookie = 'box7_8Color=' + box.style.background + ';';
+    document.cookie = 'box7_8Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box7_9");
+    document.cookie = 'box7_9Value=' + box.innerHTML + ';';
+    document.cookie = 'box7_9Color=' + box.style.background + ';';
+    document.cookie = 'box7_9Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box8_1");
+    document.cookie = 'box8_1Value=' + box.innerHTML + ';';
+    document.cookie = 'box8_1Color=' + box.style.background + ';';
+    document.cookie = 'box8_1Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box8_2");
+    document.cookie = 'box8_2Value=' + box.innerHTML + ';';
+    document.cookie = 'box8_2Color=' + box.style.background + ';';
+    document.cookie = 'box8_2Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box8_3");
+    document.cookie = 'box8_3Value=' + box.innerHTML + ';';
+    document.cookie = 'box8_3Color=' + box.style.background + ';';
+    document.cookie = 'box8_3Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box8_4");
+    document.cookie = 'box8_4Value=' + box.innerHTML + ';';
+    document.cookie = 'box8_4Color=' + box.style.background + ';';
+    document.cookie = 'box8_4Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box8_5");
+    document.cookie = 'box8_5Value=' + box.innerHTML + ';';
+    document.cookie = 'box8_5Color=' + box.style.background + ';';
+    document.cookie = 'box8_5Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box8_6");
+    document.cookie = 'box8_6Value=' + box.innerHTML + ';';
+    document.cookie = 'box8_6Color=' + box.style.background + ';';
+    document.cookie = 'box8_6Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box8_7");
+    document.cookie = 'box8_7Value=' + box.innerHTML + ';';
+    document.cookie = 'box8_7Color=' + box.style.background + ';';
+    document.cookie = 'box8_7Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box8_8");
+    document.cookie = 'box8_8Value=' + box.innerHTML + ';';
+    document.cookie = 'box8_8Color=' + box.style.background + ';';
+    document.cookie = 'box8_8Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box8_9");
+    document.cookie = 'box8_9Value=' + box.innerHTML + ';';
+    document.cookie = 'box8_9Color=' + box.style.background + ';';
+    document.cookie = 'box8_9Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box9_1");
+    document.cookie = 'box9_1Value=' + box.innerHTML + ';';
+    document.cookie = 'box9_1Color=' + box.style.background + ';';
+    document.cookie = 'box9_1Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box9_2");
+    document.cookie = 'box9_2Value=' + box.innerHTML + ';';
+    document.cookie = 'box9_2Color=' + box.style.background + ';';
+    document.cookie = 'box9_2Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box9_3");
+    document.cookie = 'box9_3Value=' + box.innerHTML + ';';
+    document.cookie = 'box9_3Color=' + box.style.background + ';';
+    document.cookie = 'box9_3Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box9_4");
+    document.cookie = 'box9_4Value=' + box.innerHTML + ';';
+    document.cookie = 'box9_4Color=' + box.style.background + ';';
+    document.cookie = 'box9_4Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box9_5");
+    document.cookie = 'box9_5Value=' + box.innerHTML + ';';
+    document.cookie = 'box9_5Color=' + box.style.background + ';';
+    document.cookie = 'box9_5Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box9_6");
+    document.cookie = 'box9_6Value=' + box.innerHTML + ';';
+    document.cookie = 'box9_6Color=' + box.style.background + ';';
+    document.cookie = 'box9_6Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box9_7");
+    document.cookie = 'box9_7Value=' + box.innerHTML + ';';
+    document.cookie = 'box9_7Color=' + box.style.background + ';';
+    document.cookie = 'box9_7Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box9_8");
+    document.cookie = 'box9_8Value=' + box.innerHTML + ';';
+    document.cookie = 'box9_8Color=' + box.style.background + ';';
+    document.cookie = 'box9_8Disabled=' + box.disabled + ';';
+
+    box = document.getElementById("box9_9");
+    document.cookie = 'box9_9Value=' + box.innerHTML + ';';
+    document.cookie = 'box9_9Color=' + box.style.background + ';';
+    document.cookie = 'box9_9Disabled=' + box.disabled + ';';
 }
