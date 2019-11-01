@@ -755,6 +755,118 @@ function GetNewGame() {
 }
 
 
+function ContinueGame() {
+
+    var box = document.getElementById('box1_1');
+    box.innerText = getCookie("box1_1Value");
+    box.style.background = getCookie("box1_1Color");
+    box.disabled = (getCookie("box1_1Disabled") == "true");
+
+    box = document.getElementById('box1_2');
+    box.innerText = getCookie("box1_2Value");
+    box.style.background = getCookie("box1_2Color");
+    box.disabled = (getCookie("box1_2Disabled") == "true");
+
+    box = document.getElementById('box1_3');
+    box.innerText = getCookie("box1_3Value");
+    box.style.background = getCookie("box1_3Color");
+    box.disabled = (getCookie("box1_3Disabled") == "true");
+
+    box = document.getElementById('box1_4');
+    box.innerText = getCookie("box1_4Value");
+    box.style.background = getCookie("box1_4Color");
+    box.disabled = (getCookie("box1_4Disabled") == "true");
+
+    box = document.getElementById('box1_5');
+    box.innerText = getCookie("box1_5Value");
+    box.style.background = getCookie("box1_5Color");
+    box.disabled = (getCookie("box1_5Disabled") == "true");
+
+    box = document.getElementById('box1_6');
+    box.innerText = getCookie("box1_6Value");
+    box.style.background = getCookie("box1_6Color");
+    box.disabled = (getCookie("box1_6Disabled") == "true");
+
+    box = document.getElementById('box1_7');
+    box.innerText = getCookie("box1_7Value");
+    box.style.background = getCookie("box1_7Color");
+    box.disabled = (getCookie("box1_7Disabled") == "true");
+
+    box = document.getElementById('box1_8');
+    box.innerText = getCookie("box1_8Value");
+    box.style.background = getCookie("box1_8Color");
+    box.disabled = (getCookie("box1_8Disabled") == "true");
+
+    box = document.getElementById('box1_9');
+    box.innerText = getCookie("box1_9Value");
+    box.style.background = getCookie("box1_9Color");
+    box.disabled = (getCookie("box1_9Disabled") == "true");
+
+    box = document.getElementById('box2_1');
+    box.innerText = getCookie("box2_1Value");
+    box.style.background = getCookie("box2_1Color");
+    box.disabled = (getCookie("box2_1Disabled") == "true");
+
+    box = document.getElementById('box2_2');
+    box.innerText = getCookie("box2_2Value");
+    box.style.background = getCookie("box2_2Color");
+    box.disabled = (getCookie("box2_2Disabled") == "true");
+
+    box = document.getElementById('box2_3');
+    box.innerText = getCookie("box2_3Value");
+    box.style.background = getCookie("box2_3Color");
+    box.disabled = (getCookie("box2_3Disabled") == "true");
+
+    box = document.getElementById('box2_4');
+    box.innerText = getCookie("box2_4Value");
+    box.style.background = getCookie("box2_4Color");
+    box.disabled = (getCookie("box2_4Disabled") == "true");
+
+    box = document.getElementById('box2_5');
+    box.innerText = getCookie("box2_5Value");
+    box.style.background = getCookie("box2_5Color");
+    box.disabled = (getCookie("box2_5Disabled") == "true");
+
+    box = document.getElementById('box2_6');
+    box.innerText = getCookie("box2_6Value");
+    box.style.background = getCookie("box2_6Color");
+    box.disabled = (getCookie("box2_6Disabled") == "true");
+
+    box = document.getElementById('box2_7');
+    box.innerText = getCookie("box2_7Value");
+    box.style.background = getCookie("box2_7Color");
+    box.disabled = (getCookie("box2_7Disabled") == "true");
+
+    box = document.getElementById('box2_8');
+    box.innerText = getCookie("box2_8Value");
+    box.style.background = getCookie("box2_8Color");
+    box.disabled = (getCookie("box2_8Disabled") == "true");
+
+    box = document.getElementById('box2_9');
+    box.innerText = getCookie("box2_9Value");
+    box.style.background = getCookie("box2_9Color");
+    box.disabled = (getCookie("box2_9Disabled") == "true");
+}
+
+
+//function copied from https://www.w3schools.com/js/js_cookies.asp
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+
 function SaveGame() {
     var box = document.getElementById("box1_1");
     document.cookie = 'box1_1Value=' + box.innerHTML + ';';
@@ -806,10 +918,10 @@ function SaveGame() {
     document.cookie = 'box2_1Color=' + box.style.background + ';';
     document.cookie = 'box2_1Disabled=' + box.disabled + ';';
 
-    box = document.getElementById("box2_3");
-    document.cookie = 'box2_3Value=' + box.innerHTML + ';';
-    document.cookie = 'box2_3Color=' + box.style.background + ';';
-    document.cookie = 'box2_3Disabled=' + box.disabled + ';';
+    box = document.getElementById("box2_2");
+    document.cookie = 'box2_2Value=' + box.innerHTML + ';';
+    document.cookie = 'box2_2Color=' + box.style.background + ';';
+    document.cookie = 'box2_2Disabled=' + box.disabled + ';';
 
     box = document.getElementById("box2_3");
     document.cookie = 'box2_3Value=' + box.innerHTML + ';';
