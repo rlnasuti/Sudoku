@@ -846,6 +846,321 @@ function ContinueGame() {
     box.innerText = getCookie("box2_9Value");
     box.style.background = getCookie("box2_9Color");
     box.disabled = (getCookie("box2_9Disabled") == "true");
+
+    box = document.getElementById('box3_1');
+    box.innerText = getCookie("box3_1Value");
+    box.style.background = getCookie("box3_1Color");
+    box.disabled = (getCookie("box3_1Disabled") == "true");
+
+    box = document.getElementById('box3_2');
+    box.innerText = getCookie("box3_2Value");
+    box.style.background = getCookie("box3_2Color");
+    box.disabled = (getCookie("box3_2Disabled") == "true");
+
+    box = document.getElementById('box3_3');
+    box.innerText = getCookie("box3_3Value");
+    box.style.background = getCookie("box3_3Color");
+    box.disabled = (getCookie("box3_3Disabled") == "true");
+
+    box = document.getElementById('box3_4');
+    box.innerText = getCookie("box3_4Value");
+    box.style.background = getCookie("box3_4Color");
+    box.disabled = (getCookie("box3_4Disabled") == "true");
+
+    box = document.getElementById('box3_5');
+    box.innerText = getCookie("box3_5Value");
+    box.style.background = getCookie("box3_5Color");
+    box.disabled = (getCookie("box3_5Disabled") == "true");
+
+    box = document.getElementById('box3_6');
+    box.innerText = getCookie("box3_6Value");
+    box.style.background = getCookie("box3_6Color");
+    box.disabled = (getCookie("box3_6Disabled") == "true");
+
+    box = document.getElementById('box3_7');
+    box.innerText = getCookie("box3_7Value");
+    box.style.background = getCookie("box3_7Color");
+    box.disabled = (getCookie("box3_7Disabled") == "true");
+
+    box = document.getElementById('box3_8');
+    box.innerText = getCookie("box3_8Value");
+    box.style.background = getCookie("box3_8Color");
+    box.disabled = (getCookie("box3_8Disabled") == "true");
+
+    box = document.getElementById('box3_9');
+    box.innerText = getCookie("box3_9Value");
+    box.style.background = getCookie("box3_9Color");
+    box.disabled = (getCookie("box3_9Disabled") == "true");
+
+    box = document.getElementById('box4_1');
+    box.innerText = getCookie("box4_1Value");
+    box.style.background = getCookie("box4_1Color");
+    box.disabled = (getCookie("box4_1Disabled") == "true");
+
+    box = document.getElementById('box4_2');
+    box.innerText = getCookie("box4_2Value");
+    box.style.background = getCookie("box4_2Color");
+    box.disabled = (getCookie("box4_2Disabled") == "true");
+
+    box = document.getElementById('box4_3');
+    box.innerText = getCookie("box4_3Value");
+    box.style.background = getCookie("box4_3Color");
+    box.disabled = (getCookie("box4_3Disabled") == "true");
+
+    box = document.getElementById('box4_4');
+    box.innerText = getCookie("box4_4Value");
+    box.style.background = getCookie("box4_4Color");
+    box.disabled = (getCookie("box4_4Disabled") == "true");
+
+    box = document.getElementById('box4_5');
+    box.innerText = getCookie("box4_5Value");
+    box.style.background = getCookie("box4_5Color");
+    box.disabled = (getCookie("box4_5Disabled") == "true");
+
+    box = document.getElementById('box4_6');
+    box.innerText = getCookie("box4_6Value");
+    box.style.background = getCookie("box4_6Color");
+    box.disabled = (getCookie("box4_6Disabled") == "true");
+
+    box = document.getElementById('box4_7');
+    box.innerText = getCookie("box4_7Value");
+    box.style.background = getCookie("box4_7Color");
+    box.disabled = (getCookie("box4_7Disabled") == "true");
+
+    box = document.getElementById('box4_8');
+    box.innerText = getCookie("box4_8Value");
+    box.style.background = getCookie("box4_8Color");
+    box.disabled = (getCookie("box4_8Disabled") == "true");
+
+    box = document.getElementById('box4_9');
+    box.innerText = getCookie("box4_9Value");
+    box.style.background = getCookie("box4_9Color");
+    box.disabled = (getCookie("box4_9Disabled") == "true");
+
+    box = document.getElementById('box5_1');
+    box.innerText = getCookie("box5_1Value");
+    box.style.background = getCookie("box5_1Color");
+    box.disabled = (getCookie("box5_1Disabled") == "true");
+
+    box = document.getElementById('box5_2');
+    box.innerText = getCookie("box5_2Value");
+    box.style.background = getCookie("box5_2Color");
+    box.disabled = (getCookie("box5_2Disabled") == "true");
+
+    box = document.getElementById('box5_3');
+    box.innerText = getCookie("box5_3Value");
+    box.style.background = getCookie("box5_3Color");
+    box.disabled = (getCookie("box5_3Disabled") == "true");
+
+    box = document.getElementById('box5_4');
+    box.innerText = getCookie("box5_4Value");
+    box.style.background = getCookie("box5_4Color");
+    box.disabled = (getCookie("box5_4Disabled") == "true");
+
+    box = document.getElementById('box5_5');
+    box.innerText = getCookie("box5_5Value");
+    box.style.background = getCookie("box5_5Color");
+    box.disabled = (getCookie("box5_5Disabled") == "true");
+
+    box = document.getElementById('box5_6');
+    box.innerText = getCookie("box5_6Value");
+    box.style.background = getCookie("box5_6Color");
+    box.disabled = (getCookie("box5_6Disabled") == "true");
+
+    box = document.getElementById('box5_7');
+    box.innerText = getCookie("box5_7Value");
+    box.style.background = getCookie("box5_7Color");
+    box.disabled = (getCookie("box5_7Disabled") == "true");
+
+    box = document.getElementById('box5_8');
+    box.innerText = getCookie("box5_8Value");
+    box.style.background = getCookie("box5_8Color");
+    box.disabled = (getCookie("box5_8Disabled") == "true");
+
+    box = document.getElementById('box5_9');
+    box.innerText = getCookie("box5_9Value");
+    box.style.background = getCookie("box5_9Color");
+    box.disabled = (getCookie("box5_9Disabled") == "true");
+
+    box = document.getElementById('box6_1');
+    box.innerText = getCookie("box6_1Value");
+    box.style.background = getCookie("box6_1Color");
+    box.disabled = (getCookie("box6_1Disabled") == "true");
+
+    box = document.getElementById('box6_2');
+    box.innerText = getCookie("box6_2Value");
+    box.style.background = getCookie("box6_2Color");
+    box.disabled = (getCookie("box262Disabled") == "true");
+
+    box = document.getElementById('box6_3');
+    box.innerText = getCookie("box6_3Value");
+    box.style.background = getCookie("box6_3Color");
+    box.disabled = (getCookie("box6_3Disabled") == "true");
+
+    box = document.getElementById('box6_4');
+    box.innerText = getCookie("box6_4Value");
+    box.style.background = getCookie("box6_4Color");
+    box.disabled = (getCookie("box6_4Disabled") == "true");
+
+    box = document.getElementById('box6_5');
+    box.innerText = getCookie("box6_5Value");
+    box.style.background = getCookie("box6_5Color");
+    box.disabled = (getCookie("box6_5Disabled") == "true");
+
+    box = document.getElementById('box6_6');
+    box.innerText = getCookie("box6_6Value");
+    box.style.background = getCookie("box6_6Color");
+    box.disabled = (getCookie("box6_6Disabled") == "true");
+
+    box = document.getElementById('box6_7');
+    box.innerText = getCookie("box6_7Value");
+    box.style.background = getCookie("box6_7Color");
+    box.disabled = (getCookie("box6_7Disabled") == "true");
+
+    box = document.getElementById('box6_8');
+    box.innerText = getCookie("box6_8Value");
+    box.style.background = getCookie("box6_8Color");
+    box.disabled = (getCookie("box6_8Disabled") == "true");
+
+    box = document.getElementById('box6_9');
+    box.innerText = getCookie("box6_9Value");
+    box.style.background = getCookie("box6_9Color");
+    box.disabled = (getCookie("box6_9Disabled") == "true");
+
+    box = document.getElementById('box7_1');
+    box.innerText = getCookie("box7_1Value");
+    box.style.background = getCookie("box7_1Color");
+    box.disabled = (getCookie("box7_1Disabled") == "true");
+
+    box = document.getElementById('box7_2');
+    box.innerText = getCookie("box7_2Value");
+    box.style.background = getCookie("box7_2Color");
+    box.disabled = (getCookie("box7_2Disabled") == "true");
+
+    box = document.getElementById('box7_3');
+    box.innerText = getCookie("box7_3Value");
+    box.style.background = getCookie("box7_3Color");
+    box.disabled = (getCookie("box7_3Disabled") == "true");
+
+    box = document.getElementById('box7_4');
+    box.innerText = getCookie("box7_4Value");
+    box.style.background = getCookie("box7_4Color");
+    box.disabled = (getCookie("box7_4Disabled") == "true");
+
+    box = document.getElementById('box7_5');
+    box.innerText = getCookie("box7_5Value");
+    box.style.background = getCookie("box7_5Color");
+    box.disabled = (getCookie("box7_5Disabled") == "true");
+
+    box = document.getElementById('box7_6');
+    box.innerText = getCookie("box7_6Value");
+    box.style.background = getCookie("box7_6Color");
+    box.disabled = (getCookie("box7_6Disabled") == "true");
+
+    box = document.getElementById('box7_7');
+    box.innerText = getCookie("box7_7Value");
+    box.style.background = getCookie("box7_7Color");
+    box.disabled = (getCookie("box7_7Disabled") == "true");
+
+    box = document.getElementById('box7_8');
+    box.innerText = getCookie("box7_8Value");
+    box.style.background = getCookie("box7_8Color");
+    box.disabled = (getCookie("box7_8Disabled") == "true");
+
+    box = document.getElementById('box7_9');
+    box.innerText = getCookie("box7_9Value");
+    box.style.background = getCookie("box7_9Color");
+    box.disabled = (getCookie("box7_9Disabled") == "true");
+
+    box = document.getElementById('box8_1');
+    box.innerText = getCookie("box8_1Value");
+    box.style.background = getCookie("box8_1Color");
+    box.disabled = (getCookie("box8_1Disabled") == "true");
+
+    box = document.getElementById('box8_2');
+    box.innerText = getCookie("box8_2Value");
+    box.style.background = getCookie("box8_2Color");
+    box.disabled = (getCookie("box8_2Disabled") == "true");
+
+    box = document.getElementById('box8_3');
+    box.innerText = getCookie("box8_3Value");
+    box.style.background = getCookie("box8_3Color");
+    box.disabled = (getCookie("box8_3Disabled") == "true");
+
+    box = document.getElementById('box8_4');
+    box.innerText = getCookie("box8_4Value");
+    box.style.background = getCookie("box8_4Color");
+    box.disabled = (getCookie("box8_4Disabled") == "true");
+
+    box = document.getElementById('box8_5');
+    box.innerText = getCookie("box8_5Value");
+    box.style.background = getCookie("box8_5Color");
+    box.disabled = (getCookie("box8_5Disabled") == "true");
+
+    box = document.getElementById('box8_6');
+    box.innerText = getCookie("box8_6Value");
+    box.style.background = getCookie("box8_6Color");
+    box.disabled = (getCookie("box8_6Disabled") == "true");
+
+    box = document.getElementById('box8_7');
+    box.innerText = getCookie("box8_7Value");
+    box.style.background = getCookie("box8_7Color");
+    box.disabled = (getCookie("box8_7Disabled") == "true");
+
+    box = document.getElementById('box8_8');
+    box.innerText = getCookie("box8_8Value");
+    box.style.background = getCookie("box8_8Color");
+    box.disabled = (getCookie("box8_8Disabled") == "true");
+
+    box = document.getElementById('box8_9');
+    box.innerText = getCookie("box8_9Value");
+    box.style.background = getCookie("box8_9Color");
+    box.disabled = (getCookie("box8_9Disabled") == "true");
+
+    box = document.getElementById('box9_1');
+    box.innerText = getCookie("box9_1Value");
+    box.style.background = getCookie("box9_1Color");
+    box.disabled = (getCookie("box9_1Disabled") == "true");
+
+    box = document.getElementById('box9_2');
+    box.innerText = getCookie("box9_2Value");
+    box.style.background = getCookie("box9_2Color");
+    box.disabled = (getCookie("box9_2Disabled") == "true");
+
+    box = document.getElementById('box9_3');
+    box.innerText = getCookie("box9_3Value");
+    box.style.background = getCookie("box9_3Color");
+    box.disabled = (getCookie("box9_3Disabled") == "true");
+
+    box = document.getElementById('box9_4');
+    box.innerText = getCookie("box9_4Value");
+    box.style.background = getCookie("box9_4Color");
+    box.disabled = (getCookie("box9_4Disabled") == "true");
+
+    box = document.getElementById('box9_5');
+    box.innerText = getCookie("box9_5Value");
+    box.style.background = getCookie("box9_5Color");
+    box.disabled = (getCookie("box9_5Disabled") == "true");
+
+    box = document.getElementById('box9_6');
+    box.innerText = getCookie("box9_6Value");
+    box.style.background = getCookie("box9_6Color");
+    box.disabled = (getCookie("box9_6Disabled") == "true");
+
+    box = document.getElementById('box9_7');
+    box.innerText = getCookie("box9_7Value");
+    box.style.background = getCookie("box9_7Color");
+    box.disabled = (getCookie("box9_7Disabled") == "true");
+
+    box = document.getElementById('box9_8');
+    box.innerText = getCookie("box9_8Value");
+    box.style.background = getCookie("box9_8Color");
+    box.disabled = (getCookie("box9_8Disabled") == "true");
+
+    box = document.getElementById('box9_9');
+    box.innerText = getCookie("box9_9Value");
+    box.style.background = getCookie("box9_9Color");
+    box.disabled = (getCookie("box9_9Disabled") == "true");
 }
 
 
